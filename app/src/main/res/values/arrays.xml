@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="moviesTittles">
+        <item>Interstellar</item>
+        <item>The Martian</item>
+        <item>Avatar</item>
+        <item>The life of Pi</item>
+        <item>The Avengers</item>
+    </array>
+
+    <array name="moviesDescriptions">
+        <item>In Earths future, a global crop blight and second Dust Bowl are slowly rendering the
+            planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is
+            working on plans to save mankind by transporting Earths population to a new home via a
+            wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and
+            a team of researchers through the wormhole and across the galaxy to find out which of
+            three planets could be mankinds new home.
+        </item>
+        <item>When astronauts blast off from the planet Mars, they leave behind Mark Watney (Matt
+            Damon), presumed dead after a fierce storm. With only a meager amount of supplies, the
+            stranded visitor must utilize his wits and spirit to find a way to survive on the
+            hostile planet. Meanwhile, back on Earth, members of NASA and a team of international
+            scientists work tirelessly to bring him home, while his crew mates hatch their own plan
+            for a daring rescue mission.
+        </item>
+        <item>On the lush alien world of Pandora live the Navi, beings who appear primitive but are
+            highly evolved. Because the planets environment is poisonous, human/Navi hybrids,
+            called Avatars, must link to human minds to allow for free movement on Pandora. Jake
+            Sully (Sam Worthington), a paralyzed former Marine, becomes mobile again through one
+            such Avatar and falls in love with a Navi woman (Zoe Saldana). As a bond with her
+            grows, he is drawn into a battle for the survival of her world.
+        </item>
+        <item>After deciding to sell their zoo in India and move to Canada, Santosh and Gita Patel
+            board a freighter with their sons and a few remaining animals. Tragedy strikes when a
+            terrible storm sinks the ship, leaving the Patels teenage son, Pi (Suraj Sharma), as
+            the only human survivor. However, Pi is not alone; a fearsome Bengal tiger has also
+            found refuge aboard the lifeboat. As days turn into weeks and weeks drag into months, Pi
+            and the tiger must learn to trust each other if both are to survive.
+        </item>
+        <item>When Thors evil brother, Loki (Tom Hiddleston), gains access to the unlimited power
+            of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of
+            S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented
+            threat to Earth. Joining Furys "dream team" are Iron Man (Robert Downey Jr.), Captain
+            America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow
+            (Scarlett Johansson) and Hawkeye (Jeremy Renner).
+        </item>
+    </array>
+
+    <array name="moviesImages">
+        <item>https://upload.wikimedia.org/wikipedia/sco/b/bc/Interstellar_film_poster.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/sco/c/cd/The_Martian_film_poster.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/sco/b/b0/Avatar-Teaser-Poster.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/ml/5/57/Life_of_Pi_2012_Poster.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/sco/4/4d/Avengers_Infinity_War_poster.jpg
+        </item>
+    </array>
+</resources>
