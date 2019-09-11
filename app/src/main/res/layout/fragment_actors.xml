@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="58dp" />
+
+    <ImageView
+        android:id="@+id/iv_movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movieActors" />
+
+    <TextView
+        android:id="@+id/actors"
+        android:layout_width="match_parent"
+        android:layout_height="175dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/releaseDateMovie" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="58dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/categoryMovie" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="61dp" />
+</LinearLayout>

@@ -16,12 +16,14 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder> {
+public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MovieHolder>  {
 
     private ArrayList<Movie> movies;
+    OnClickItemListener onClickItemListener;
+
     private Context context;
 
-    public MovieAdapter(ArrayList<Movie> movies, Context context) {
+    public MovieListAdapter(ArrayList<Movie> movies, Context context) {
         this.movies = movies;
         this.context = context;
     }
@@ -31,12 +33,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
     public MovieHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View movieCard = inflater.inflate(R.layout.adapter_card, parent, false);
+        View movieCard = inflater.inflate(R.layout.movie_item, parent, false);
         return new MovieHolder(movieCard);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MovieHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MovieHolder holder, final int position) {
 
         Movie movie = movies.get(position);
 
@@ -59,7 +61,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
         cardDescription.setText(movie.getDescription());
     }
 
-
     @Override
     public int getItemCount() {
         return movies.size();
@@ -67,15 +68,28 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
 
     public class MovieHolder extends RecyclerView.ViewHolder {
 
+        private View itemView;
         private ImageView iv_movieLogo;
-        private TextView tv_movieTittle,tv_movieDescription;
+        private TextView tv_movieTittle, tv_movieDescription;
 
-        public MovieHolder(@NonNull View itemView) {
+        public MovieHolder(@NonNull final View itemView) {
             super(itemView);
 
             iv_movieLogo = itemView.findViewById(R.id.iv_movieLogo);
             tv_movieTittle = itemView.findViewById(R.id.tv_movieTittle);
             tv_movieDescription = itemView.findViewById(R.id.tv_movieDescription);
+            this.itemView = itemView;
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onClickItemListener.onMovieSelected();
+                }
+            });
+
         }
+    }
+
+    public interface OnClickItemListener {
+        void onMovieSelected(int index);
     }
 }
