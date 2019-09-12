@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,13 +20,13 @@ import java.util.ArrayList;
 public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MovieHolder>  {
 
     private ArrayList<Movie> movies;
-    OnClickItemListener onClickItemListener;
-
+    private OnClickItemListener onClickItemListener;
     private Context context;
 
-    public MovieListAdapter(ArrayList<Movie> movies, Context context) {
+    public MovieListAdapter(ArrayList<Movie> movies, Context context,OnClickItemListener listener) {
         this.movies = movies;
         this.context = context;
+        this.onClickItemListener = listener;
     }
 
     @NonNull
@@ -34,7 +35,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View movieCard = inflater.inflate(R.layout.movie_item, parent, false);
-        return new MovieHolder(movieCard);
+        return new MovieHolder(movieCard,onClickItemListener);
     }
 
     @Override
@@ -51,12 +52,6 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
                 .resize(500,600)
                 .into(cardImage);
 
-        /*cardImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context,"clicked!",Toast.LENGTH_LONG).show();
-            }
-        });*/
         cardTittle.setText(movie.getTittle());
         cardDescription.setText(movie.getDescription());
     }
@@ -66,26 +61,24 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         return movies.size();
     }
 
-    public class MovieHolder extends RecyclerView.ViewHolder {
+    public class MovieHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private View itemView;
         private ImageView iv_movieLogo;
         private TextView tv_movieTittle, tv_movieDescription;
+        private OnClickItemListener onClickItemListener;
 
-        public MovieHolder(@NonNull final View itemView) {
+        MovieHolder(@NonNull final View itemView, OnClickItemListener listener) {
             super(itemView);
-
+            this.onClickItemListener = listener;
             iv_movieLogo = itemView.findViewById(R.id.iv_movieLogo);
             tv_movieTittle = itemView.findViewById(R.id.tv_movieTittle);
             tv_movieDescription = itemView.findViewById(R.id.tv_movieDescription);
-            this.itemView = itemView;
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    onClickItemListener.onMovieSelected();
-                }
-            });
-
+            itemView.setOnClickListener(this);
+        }
+        @Override
+        public void onClick(View view) {
+            Toast.makeText(context,"clicked",Toast.LENGTH_LONG).show();
+            onClickItemListener.onMovieSelected(getAdapterPosition());
         }
     }
 

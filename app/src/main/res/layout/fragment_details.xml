@@ -7,10 +7,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
         android:text="@string/detailsMovie" />
 
     <TextView
         android:id="@+id/details"
+        android:textColor="@color/colorLightGrey"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
