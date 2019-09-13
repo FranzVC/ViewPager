@@ -15,6 +15,8 @@
 
     <TextView
         android:id="@+id/actorName"
+        android:textSize="@dimen/tittle"
+        android:layout_margin="@dimen/margin"
         android:layout_width="match_parent"
         android:textColor="@color/colorWhite"
         android:textAlignment="center"
@@ -23,6 +25,8 @@
     <TextView
         android:id="@+id/biography"
         android:textColor="@color/colorLightGrey"
+        android:layout_margin="@dimen/margin"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

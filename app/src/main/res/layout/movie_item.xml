@@ -18,7 +18,7 @@
         android:textColor="@color/colorWhite"
         android:layout_marginStart="150dp"
         android:padding="10dp"
-        android:textSize="30sp" />
+        android:textSize="@dimen/tittle" />
 
     <TextView
         android:id="@+id/tv_movieDescription"

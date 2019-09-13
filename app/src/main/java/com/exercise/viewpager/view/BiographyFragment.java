@@ -37,6 +37,7 @@ public class BiographyFragment extends Fragment {
         biography.setText(getArguments().getString("biography"));
         Picasso.get().load(getArguments().getString("mainActorImage")).resize(500,500).into(actorImage);
 
+        //getArguments().clear();
 
         return root;
     }

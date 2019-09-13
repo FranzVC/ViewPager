@@ -10,32 +10,40 @@
         android:layout_width="match_parent"
         android:textAlignment="center"
         android:layout_height="58dp"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/tittle"
         android:textColor="@color/colorWhite"/>
 
     <ImageView
         android:id="@+id/iv_movieImage"
         android:layout_width="match_parent"
-        android:layout_height="278dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="ContentDescription" />
+        android:layout_height="219dp"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+
         android:text="@string/movieActors"
         android:textColor="@color/colorWhite"/>
 
     <TextView
         android:id="@+id/actors"
-        android:textColor="@color/colorLightGrey"
         android:layout_width="match_parent"
-        android:layout_height="175dp" />
+
+        android:layout_height="126dp"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/colorLightGrey" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:textColor="@color/colorWhite"
+        android:layout_margin="@dimen/margin"
+
         android:layout_height="wrap_content"
         android:text="@string/releaseDateMovie" />
 
@@ -43,17 +51,23 @@
         android:id="@+id/releaseDate"
         android:textColor="@color/colorLightGrey"
         android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin"
+
         android:layout_height="58dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+
         android:textColor="@color/colorWhite"
         android:text="@string/categoryMovie" />
 
     <TextView
         android:id="@+id/category"
+        android:layout_margin="@dimen/margin"
+
         android:textColor="@color/colorLightGrey"
         android:layout_width="match_parent"
         android:layout_height="61dp" />

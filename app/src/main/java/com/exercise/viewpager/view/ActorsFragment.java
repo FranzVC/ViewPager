@@ -15,7 +15,6 @@ import com.squareup.picasso.Picasso;
 
 public class ActorsFragment extends Fragment {
 
-
     public static Fragment newInstance(String tittle, String actors, String releaseDate, String category, String movieImage) {
         ActorsFragment actorsFragment = new ActorsFragment();
         Bundle b = new Bundle();
@@ -24,6 +23,7 @@ public class ActorsFragment extends Fragment {
         b.putString("releaseData", releaseDate);
         b.putString("category", category);
         b.putString("movieImage", movieImage);
+
         actorsFragment.setArguments(b);
         return actorsFragment;
     }
@@ -32,21 +32,22 @@ public class ActorsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_actors, container, false);
-        TextView tittle, actors, releaseDate, category;
+        TextView tv_tittle, tv_actors, tv_releaseDate, tv_category;
         ImageView iv_movieImage;
 
-        tittle = root.findViewById(R.id.tittle);
-        actors = root.findViewById(R.id.actors);
-        releaseDate = root.findViewById(R.id.releaseDate);
-        category = root.findViewById(R.id.category);
+        tv_tittle = root.findViewById(R.id.tittle);
+        tv_actors = root.findViewById(R.id.actors);
+        tv_releaseDate = root.findViewById(R.id.releaseDate);
+        tv_category = root.findViewById(R.id.category);
         iv_movieImage = root.findViewById(R.id.iv_movieImage);
 
-        tittle.setText(getArguments().getString("tittle"));
-        actors.setText(getArguments().getString("actors"));
-        releaseDate.setText(getArguments().getString("releaseData"));
-        category.setText(getArguments().getString("category"));
+        tv_tittle.setText(getArguments().getString("tittle"));
+        tv_actors.setText(getArguments().getString("actors"));
+        tv_releaseDate.setText(getArguments().getString("releaseData"));
+        tv_category.setText(getArguments().getString("category"));
         Picasso.get().load(getArguments().getString("movieImage")).resize(500,500).into(iv_movieImage);
 
+        //getArguments().clear();
         return root;
     }
 

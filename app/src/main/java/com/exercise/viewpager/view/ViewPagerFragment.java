@@ -1,16 +1,16 @@
 package com.exercise.viewpager.view;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.exercise.viewpager.R;
+import com.exercise.viewpager.util.DepthPageTransformer;
+import com.exercise.viewpager.util.ZoomOutPageTransformer;
 
 public class ViewPagerFragment extends Fragment {
 
@@ -25,6 +25,8 @@ public class ViewPagerFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_movies_view_pager, container, false);
         ViewPager viewPager = root.findViewById(R.id.viewPager);
 
+        viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
+        //viewPager.setPageTransformer(true, new DepthPageTransformer());
         viewPager.setAdapter(new ViewPagerMovieAdapter(posInList,getContext(), getActivity().getSupportFragmentManager()));
         return root;
     }

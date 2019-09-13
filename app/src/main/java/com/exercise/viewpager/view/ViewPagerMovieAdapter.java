@@ -34,14 +34,14 @@ public class ViewPagerMovieAdapter extends FragmentPagerAdapter {
         String[] mainActorsImages;
 
         tittles = context.getResources().getStringArray(R.array.moviesTittles);
-        actors = context.getResources().getStringArray(R.array.moviesTittles);
-        releasesDates = context.getResources().getStringArray(R.array.moviesTittles);
+        actors = context.getResources().getStringArray(R.array.actors);
+        releasesDates = context.getResources().getStringArray(R.array.releasesDates);
         categories = context.getResources().getStringArray(R.array.moviesTittles);
         movieImages = context.getResources().getStringArray(R.array.moviesImages);
         descriptions = context.getResources().getStringArray(R.array.moviesDescriptions);
-        mainActors = context.getResources().getStringArray(R.array.moviesTittles);
-        biographies = context.getResources().getStringArray(R.array.moviesTittles);
-        mainActorsImages = context.getResources().getStringArray(R.array.moviesImages);
+        mainActors = context.getResources().getStringArray(R.array.mainActors);
+        biographies = context.getResources().getStringArray(R.array.biographies);
+        mainActorsImages = context.getResources().getStringArray(R.array.actorsImages);
         switch (position) {
             case 0:
                 return ActorsFragment.newInstance(tittles[posInList],actors[posInList],releasesDates[posInList],categories[posInList],movieImages[posInList]);

@@ -15,12 +15,12 @@ import com.exercise.viewpager.model.Movie;
 
 import java.util.ArrayList;
 
-public class MoviesListFragment extends Fragment  {
+public class MoviesListFragment extends Fragment {
 
     private ArrayList<Movie> movies = new ArrayList<>();
     private MovieListAdapter.OnClickItemListener listener;
 
-    MoviesListFragment(MovieListAdapter.OnClickItemListener listener){
+    public MoviesListFragment(MovieListAdapter.OnClickItemListener listener) {
         this.listener = listener;
     }
 
@@ -54,7 +54,4 @@ public class MoviesListFragment extends Fragment  {
             movies.add(movie);
         }
     }
-
-
-
 }

@@ -54,4 +54,99 @@
         <item>https://upload.wikimedia.org/wikipedia/sco/4/4d/Avengers_Infinity_War_poster.jpg
         </item>
     </array>
+
+    <array name="actorsImages">
+        <item>
+            https://upload.wikimedia.org/wikipedia/commons/8/8e/Matthew_McConaughey_-_Goldene_Kamera_2014_-_Berlin.jpg
+        </item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/f/fc/Matt_Damon_2013.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/d/de/Sam_Worthington_4%2C_2013.jpg
+        </item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/d/de/Suraj_sharma_life_of_pi.jpg</item>
+        <item>
+            https://upload.wikimedia.org/wikipedia/commons/e/e9/The_Avengers_Cast_2010_Comic-Con_cropped.jpg
+        </item>
+    </array>
+
+    <array name="mainActors">
+        <item>Matthew McConaughey</item>
+        <item>Matt Damon</item>
+        <item>Sam Worthington</item>
+        <item>Suraj sharma</item>
+        <item>Robert Downey Jr</item>
+    </array>
+
+    <array name="biographies">
+        <item>Matthew David McConaughey was born on November 4, 1969, in Uvalde, Texas. His
+            mother, Mary Kathleen "Kay"/"KMac" (née McCabe), is a former kindergarten teacher and
+            published author who taught McConaughey. She was originally from Trenton, New
+            Jersey.His father, James Donald "Jim" McConaughey, was born in Mississippi in
+            1929 and raised in Louisiana, where he ran an oil pipe supply business; he played
+            for the Kentucky Wildcats and the Houston Cougars college football teams. In 1953,
+            Jim was drafted in the 27th round by the NFLs Green Bay Packers. He was released before
+            the season began and never played an official league game in the NFL
+        </item>
+        <item>Damon was born in Cambridge, Massachusetts, the second son of stockbroker Kent Telfer
+            Damon and Nancy Carlsson-Paige, an early childhood education professor at Lesley
+            University. His father had English and Scottish ancestry, and his mother is of
+            five-eighths Finnish and three-eighths Swedish descent (his mothers family surname had
+            been changed from the Finnish "Pajari" to "Paige"). Damon and his family
+            moved to Newton for two years. His parents divorced when he was two years old, and Damon
+            and his brother returned with their mother to Cambridge, where they lived in a
+            six-family communal house. His brother Kyle is now an accomplished sculptor and
+            artist.
+        </item>
+        <item>Samuel Henry John Worthington is an Australian actor and writer. He portrayed Jake
+            Sully in the 2009 film Avatar, Marcus Wright in Terminator Salvation, and Perseus in
+            Clash of the Titans as well as its sequel Wrath of the Titans.
+        </item>
+        <item>Suraj Sharma is an Indian actor who made his debut with 2012 film Life of Pi. Directed
+            by Ang Lee, Life of Pi was adapted from the novel of the same name, and earned him
+            critical acclaim as well as a BAFTA Rising Star Award nomination. In 2014, he portrayed
+            Aayan Ibrahim in season 4 of the Showtime series Homeland.
+        </item>
+        <item>Robert John Downey Jr. is an American actor, producer and singer. His career has been
+            characterized by critical and popular notoriety in his youth, followed by a period of
+            substance abuse and legal troubles, before a resumption of critical repute and
+            resurgence of commercial success in middle age.
+        </item>
+    </array>
+
+    <array name="releasesDates">
+        <item>November 6, 2014</item>
+        <item>September 24, 2015</item>
+        <item>December 10, 2009</item>
+        <item>January 3, 2013</item>
+        <item>April 22, 2019</item>
+    </array>
+
+    <array name="actors">
+        <item>Matthew McConaughey as Joseph Cooper. Anne Hathaway as Amelia Brand. Jessica Chastain
+            as Murph Cooper. Mackenzie Foy as young Murph. Ellen Burstyn as old Murph. Matt Damon as
+            Mann. John Lithgow as Donald. Michael Caine as Professor Brand. Casey Affleck as Tom
+            Cooper. Timothée Chalamet as young Tom.
+        </item>
+        <item>Matt Damon. Mark Watney. Jessica Chastain. Kristen Wiig. Annie Montrose. Jeff Daniels.
+            Michael Peña. Rick Martinez. Sean Bean. Kate Mara. Beth Johanssen. Sebastian Stan. Aksel
+            Hennie. Alex Vogel. Chiwetel Ejiofor. Benedict Wong. Bruce Ng. Mackenzie Davis. Donald
+            Glover. Rich Purnell. Nick Mohammed.
+        </item>
+        <item>Sam Worthington. Jake Sully. Zoe Saldana. Sigourney Weaver. Dr. Grace Augustine.
+            Michelle Rodriguez. Trudy Chacón. Giovanni Ribisi. Joel David Moore. Norm Spellman. CCH
+            Pounder. Wes Studi. Eytukan. Laz Alonso. Dileep Rao. Dr. Max Patel. Sean Anthony Moran.
+            Private Fike. Jason Whyte. Scott Lawrence.
+        </item>
+        <item>Suraj Sharma as Piscine Molitor Pi Patel, age 16/17. Irrfan Khan as Pi, adult. Rafe
+            Spall as The Writer. Tabu as Gita Patel, Pis mother. Adil Hussain as Santosh Patel,
+            Pis father. Ayan Khan as Ravi Patel, Pis older brother, age 7. Gérard Depardieu as the
+            Cook. Wang Po-chieh as Sailor. Jag Huang as Sailor.
+        </item>
+        <item>Robert Downey Jr. Actor | Iron Man. Chris Evans. Actor | The Avengers. Brie Larson.
+            Actress | Room. Chris Hemsworth. Actor | The Avengers. Mark Ruffalo. Actor | The Kids
+            Are All Right. Scarlett Johansson. Actress | Her. Karen Gillan. Actress | Selfie. Paul
+            Rudd. Actor | Ant-Man.
+        </item>
+    </array>
+
+
 </resources>

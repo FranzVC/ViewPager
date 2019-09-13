@@ -30,6 +30,8 @@ public class DetailsFragment extends Fragment {
         description = root.findViewById(R.id.details);
 
         description.setText(getArguments().getString("description"));
+        //getArguments().clear();
+
         return root;
     }
 

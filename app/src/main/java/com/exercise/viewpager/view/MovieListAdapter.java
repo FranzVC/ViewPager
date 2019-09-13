@@ -77,7 +77,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         }
         @Override
         public void onClick(View view) {
-            Toast.makeText(context,"clicked",Toast.LENGTH_LONG).show();
+            //Toast.makeText(context,"clicked",Toast.LENGTH_LONG).show();
             onClickItemListener.onMovieSelected(getAdapterPosition());
         }
     }
